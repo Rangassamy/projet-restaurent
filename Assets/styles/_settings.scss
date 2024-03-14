@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Allura";
+  src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+$font1: Poppins, sans-serif;
+$font1: Allura, sans-serif;
+$font1: Roboto, sans-serif;
+
+$color1: rgb(236, 230, 230);
+$color2: whitesmoke;
+$color3: black;
+$color4: rgb(29, 28, 28);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
