@@ -205,4 +205,85 @@ header .header-container h3 {
   header .header-container h3 {
     font-size: 0.7rem;
   }
+}
+
+.discover-our-store {
+  background: rgb(236, 230, 230);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 650px;
+  height: 100%;
+  max-height: 760px;
+}
+@media screen and (max-width: 700px) {
+  .discover-our-store {
+    grid-template-columns: 100%;
+  }
+}
+.discover-our-store .discover-our-store-left-part-container {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+.discover-our-store .discover-our-store-left-part-container .discover-our-store-left-part {
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px dashed rgb(161, 111, 17);
+  padding: 40px 5px 20px;
+}
+.discover-our-store .discover-our-store-left-part-container .discover-our-store-left-part h2 {
+  font-family: Allura, sans-serif;
+  color: rgb(161, 111, 17);
+  font-size: 3rem;
+  font-weight: 100;
+}
+.discover-our-store .discover-our-store-left-part-container .discover-our-store-left-part h3 {
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  font-size: 1.7rem;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+}
+.discover-our-store .discover-our-store-left-part-container .discover-our-store-left-part span img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  margin: 30px 0 40px;
+}
+.discover-our-store .discover-our-store-left-part-container .discover-our-store-left-part p {
+  font-family: Roboto, sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+.discover-our-store .discover-our-store-left-part-container .discover-our-store-left-part img {
+  border-radius: 150px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+.discover-our-store .discover-our-store-left-part-container .discover-our-store-left-part h4 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.3rem;
+}
+.discover-our-store .discover-our-store-left-part-container .discover-our-store-left-part h5 {
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  color: rgb(179, 176, 176);
+  font-size: 1.1rem;
+}
+.discover-our-store .discover-our-store-right-part {
+  background: url(../img/store-01.jpg) center/cover;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 700px) {
+  .discover-our-store .discover-our-store-right-part {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
