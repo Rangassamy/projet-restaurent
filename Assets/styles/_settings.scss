@@ -11,13 +11,14 @@
   src: url(../fonts/Roboto-Light.ttf);
 }
 $font1: Poppins, sans-serif;
-$font1: Allura, sans-serif;
-$font1: Roboto, sans-serif;
+$font2: Allura, sans-serif;
+$font3: Roboto, sans-serif;
 
 $color1: rgb(236, 230, 230);
 $color2: whitesmoke;
 $color3: black;
 $color4: rgb(29, 28, 28);
+$color5: rgb(124, 90, 27);
 
 * {
   margin: 0;
@@ -27,4 +28,13 @@ $color4: rgb(29, 28, 28);
 
 body {
   min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: $color2;
 }
