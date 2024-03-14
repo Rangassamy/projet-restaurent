@@ -45,17 +45,47 @@ header nav {
   padding: 30px 0;
   margin-bottom: 150px;
 }
+@media screen and (max-width: 700px) {
+  header nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 header nav h3 {
   font-family: Allura, sans-serif;
   font-size: 3.5rem;
 }
+@media screen and (max-width: 1200px) {
+  header nav h3 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  header nav h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  header nav h3 {
+    text-align: left;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  header nav #navbar {
+    display: none;
+  }
+}
 header nav #navbar li {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  pointer-events: fill;
 }
 header nav #navbar li:hover {
-  font-size: 1.5rem;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 header nav ul {
   display: -webkit-box;
@@ -78,6 +108,21 @@ header nav ul li {
           justify-content: center;
   font-size: 1.1rem;
 }
+@media screen and (max-width: 1200px) {
+  header nav ul li {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  header nav ul li {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  header nav ul li {
+    font-size: 1.5rem;
+  }
+}
 header nav ul a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -93,12 +138,27 @@ header .header-container {
   text-align: center;
 }
 header .header-container h2 {
-  color: rgb(124, 90, 27);
+  color: rgb(161, 111, 17);
   font-family: Allura, sans-serif;
   font-size: 4rem;
   font-weight: 100;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
+}
+@media screen and (max-width: 630px) {
+  header .header-container h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  header .header-container h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  header .header-container h2 {
+    font-size: 2rem;
+  }
 }
 header .header-container h1 {
   font-family: Poppins, sans-serif;
@@ -107,6 +167,21 @@ header .header-container h1 {
   letter-spacing: 10px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 630px) {
+  header .header-container h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  header .header-container h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  header .header-container h1 {
+    font-size: 2rem;
+  }
+}
 header .header-container h3 {
   font-family: Roboto, sans-serif;
   font-size: 1rem;
@@ -114,4 +189,20 @@ header .header-container h3 {
   text-transform: uppercase;
   margin-top: 50px;
   font-weight: 200;
+}
+@media screen and (max-width: 630px) {
+  header .header-container h3 {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 550px) {
+  header .header-container h3 {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  header .header-container h3 {
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=index.css.map */
