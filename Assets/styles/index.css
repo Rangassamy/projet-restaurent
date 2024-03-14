@@ -49,6 +49,14 @@ header nav h3 {
   font-family: Allura, sans-serif;
   font-size: 3.5rem;
 }
+header nav #navbar li {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  pointer-events: fill;
+}
+header nav #navbar li:hover {
+  font-size: 1.5rem;
+}
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,7 +83,8 @@ header nav ul a {
   transition: 0.2s;
 }
 header nav ul a:hover {
-  font-size: 1.7rem;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 header .header-container {
   width: 80%;
@@ -88,6 +97,8 @@ header .header-container h2 {
   font-family: Allura, sans-serif;
   font-size: 4rem;
   font-weight: 100;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 header .header-container h1 {
   font-family: Poppins, sans-serif;
