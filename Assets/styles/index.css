@@ -286,4 +286,71 @@ header .header-container h3 {
   .discover-our-store .discover-our-store-right-part {
     display: none;
   }
+}
+
+.food {
+  background: url(../img/bg-menu-01.jpg) no-repeat;
+  background-size: contain;
+  background-color: rgb(29, 28, 28);
+  background-position: bottom;
+  text-align: center;
+  padding: 80px 0 120px;
+}
+.food .food-section-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.food .food-section-container h2 {
+  color: rgb(161, 111, 17);
+  font-family: Allura, sans-serif;
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+.food .food-section-container span img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  margin-bottom: 40px;
+}
+.food .food-section-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+.food .food-section-container ul li {
+  color: whitesmoke;
+  font-family: Roboto, sans-serif;
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+  position: relative;
+}
+.food .food-section-container ul li::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.food .food-section-container .food-container {
+  background: whitesmoke;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(4, 1s);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.food .food-section-container .food-container > div {
+  display: grid;
+  grid-template-columns: 40% 60%;
 }/*# sourceMappingURL=index.css.map */
