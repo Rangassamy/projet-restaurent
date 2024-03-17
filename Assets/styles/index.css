@@ -352,14 +352,62 @@ header .header-container h3 {
       -ms-flex-align: center;
           align-items: center;
   min-height: 700px;
+  position: relative;
+}
+.food .food-section-container .food-container::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: rgb(161, 111, 17);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .food .food-section-container .food-container > div {
   display: grid;
   grid-template-columns: 25% 75%;
   border-bottom: 1px dashed rgb(161, 111, 17);
-  padding: 20px 0;
+  padding: 15px 0 20px;
 }
 .food .food-section-container .food-container > div img {
   border-radius: 150px;
   margin: 0 auto;
+}
+.food .food-section-container .food-container > div .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  position: relative;
+}
+.food .food-section-container .food-container > div .text-container h2 {
+  font-family: Poppins, sans-serif;
+  color: black;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.food .food-section-container .food-container > div .text-container h3 {
+  font-family: Roboto, sans-serif;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+.food .food-section-container .food-container > div .text-container h4 {
+  position: absolute;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0;
+  color: rgb(161, 111, 17);
+  font-family: Poppins, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 200;
 }/*# sourceMappingURL=index.css.map */
