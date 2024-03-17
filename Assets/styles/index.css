@@ -290,15 +290,15 @@ header .header-container h3 {
 
 .food {
   background: url(../img/bg-menu-01.jpg) no-repeat;
-  background-size: contain;
-  background-color: rgb(29, 28, 28);
+  background-size: auto;
   background-position: bottom;
+  background-color: rgb(29, 28, 28);
   text-align: center;
   padding: 80px 0 120px;
 }
 .food .food-section-container {
   width: 80%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .food .food-section-container > h2 {
@@ -373,7 +373,7 @@ header .header-container h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 700px;
+  min-height: 950px;
   position: relative;
 }
 @media screen and (max-width: 1100px) {
@@ -400,12 +400,8 @@ header .header-container h3 {
 .food .food-section-container .food-container > div img {
   border-radius: 150px;
   margin: 0 auto;
-}
-@media screen and (max-width: 1200px) {
-  .food .food-section-container .food-container > div img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 @media screen and (max-width: 1100px) {
   .food .food-section-container .food-container > div img {
@@ -442,14 +438,9 @@ header .header-container h3 {
 .food .food-section-container .food-container > div .text-container h2 {
   font-family: Poppins, sans-serif;
   color: black;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: 100;
-}
-@media screen and (max-width: 1200px) {
-  .food .food-section-container .food-container > div .text-container h2 {
-    font-size: 1rem;
-  }
 }
 @media screen and (max-width: 1100px) {
   .food .food-section-container .food-container > div .text-container h2 {
@@ -474,13 +465,8 @@ header .header-container h3 {
 .food .food-section-container .food-container > div .text-container h3 {
   font-family: Roboto, sans-serif;
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 100;
-}
-@media screen and (max-width: 1200px) {
-  .food .food-section-container .food-container > div .text-container h3 {
-    font-size: 1.2rem;
-  }
 }
 @media screen and (max-width: 1100px) {
   .food .food-section-container .food-container > div .text-container h3 {
@@ -510,13 +496,8 @@ header .header-container h3 {
   right: -17%;
   color: rgb(161, 111, 17);
   font-family: Poppins, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 200;
-}
-@media screen and (max-width: 1200px) {
-  .food .food-section-container .food-container > div .text-container h4 {
-    font-size: 1.2rem;
-  }
 }
 @media screen and (max-width: 1100px) {
   .food .food-section-container .food-container > div .text-container h4 {
