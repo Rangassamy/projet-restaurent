@@ -332,6 +332,21 @@ header .header-container h3 {
   padding-bottom: 10px;
   position: relative;
 }
+@media screen and (max-width: 800px) {
+  .food .food-section-container ul li {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .food .food-section-container ul li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .food .food-section-container ul li {
+    font-size: 0.8rem;
+  }
+}
 .food .food-section-container ul li:hover::before {
   width: 140%;
 }
@@ -361,6 +376,12 @@ header .header-container h3 {
   min-height: 700px;
   position: relative;
 }
+@media screen and (max-width: 1100px) {
+  .food .food-section-container .food-container {
+    grid-template-columns: 90%;
+    min-height: 1500px;
+  }
+}
 .food .food-section-container .food-container::before {
   content: "";
   width: 100%;
@@ -372,13 +393,37 @@ header .header-container h3 {
 }
 .food .food-section-container .food-container > div {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 30% 60%;
   border-bottom: 1px dashed rgb(161, 111, 17);
   padding: 15px 0 20px;
 }
 .food .food-section-container .food-container > div img {
   border-radius: 150px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .food .food-section-container .food-container > div img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .food .food-section-container .food-container > div img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 620px) {
+  .food .food-section-container .food-container > div img {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+@media screen and (max-width: 500px) {
+  .food .food-section-container .food-container > div img {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
 }
 .food .food-section-container .food-container > div .text-container {
   display: -webkit-box;
@@ -401,20 +446,95 @@ header .header-container h3 {
   text-transform: uppercase;
   font-weight: 100;
 }
+@media screen and (max-width: 1200px) {
+  .food .food-section-container .food-container > div .text-container h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .food .food-section-container .food-container > div .text-container h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .food .food-section-container .food-container > div .text-container h2 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .food .food-section-container .food-container > div .text-container h2 {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .food .food-section-container .food-container > div .text-container h2 {
+    font-size: 0.7rem;
+  }
+}
 .food .food-section-container .food-container > div .text-container h3 {
   font-family: Roboto, sans-serif;
   color: black;
   font-size: 1.3rem;
   font-weight: 100;
 }
+@media screen and (max-width: 1200px) {
+  .food .food-section-container .food-container > div .text-container h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .food .food-section-container .food-container > div .text-container h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .food .food-section-container .food-container > div .text-container h3 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .food .food-section-container .food-container > div .text-container h3 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .food .food-section-container .food-container > div .text-container h3 {
+    font-size: 0.9rem;
+  }
+}
 .food .food-section-container .food-container > div .text-container h4 {
   position: absolute;
   bottom: 50%;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
-  right: 0;
+  right: -17%;
   color: rgb(161, 111, 17);
   font-family: Poppins, sans-serif;
   font-size: 1.3rem;
   font-weight: 200;
+}
+@media screen and (max-width: 1200px) {
+  .food .food-section-container .food-container > div .text-container h4 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .food .food-section-container .food-container > div .text-container h4 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .food .food-section-container .food-container > div .text-container h4 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .food .food-section-container .food-container > div .text-container h4 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .food .food-section-container .food-container > div .text-container h4 {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=index.css.map */
