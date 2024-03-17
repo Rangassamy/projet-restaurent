@@ -11,7 +11,7 @@
     max-width: 1000px;
     margin: 0 auto;
 
-    h2 {
+    > h2 {
       color: $color5;
       font-family: $font2;
       font-size: 3rem;
@@ -49,13 +49,22 @@
     .food-container {
       background: $color2;
       display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: repeat(4, 1s);
+      grid-template-columns: 45% 45%;
+      grid-template-rows: repeat(4, 1f);
+      justify-content: space-around;
       align-items: center;
+      min-height: 700px;
 
       > div {
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 25% 75%;
+        border-bottom: 1px dashed $color5;
+        padding: 20px 0;
+
+        img {
+          border-radius: 150px;
+          margin: 0 auto;
+        }
       }
     }
   }

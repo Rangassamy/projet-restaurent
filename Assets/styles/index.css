@@ -301,7 +301,7 @@ header .header-container h3 {
   max-width: 1000px;
   margin: 0 auto;
 }
-.food .food-section-container h2 {
+.food .food-section-container > h2 {
   color: rgb(161, 111, 17);
   font-family: Allura, sans-serif;
   font-size: 3rem;
@@ -344,13 +344,22 @@ header .header-container h3 {
 .food .food-section-container .food-container {
   background: whitesmoke;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(4, 1s);
+  grid-template-columns: 45% 45%;
+  grid-template-rows: repeat(4, 1f);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 700px;
 }
 .food .food-section-container .food-container > div {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 25% 75%;
+  border-bottom: 1px dashed rgb(161, 111, 17);
+  padding: 20px 0;
+}
+.food .food-section-container .food-container > div img {
+  border-radius: 150px;
+  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */
