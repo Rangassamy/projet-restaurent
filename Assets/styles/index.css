@@ -290,11 +290,16 @@ header .header-container h3 {
 
 .food {
   background: url(../img/bg-menu-01.jpg) no-repeat;
-  background-size: auto;
+  background-size: contain;
   background-position: bottom;
   background-color: rgb(29, 28, 28);
   text-align: center;
   padding: 80px 0 120px;
+}
+@media screen and (max-width: 1800px) {
+  .food {
+    background-size: auto;
+  }
 }
 .food .food-section-container {
   width: 80%;
