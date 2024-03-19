@@ -528,7 +528,7 @@ header .header-container h3 {
 .footer {
   background-color: rgb(29, 28, 28);
   text-align: center;
-  padding-top: 90px;
+  padding: 90px 0 900px;
 }
 .footer .section-1 {
   display: grid;
@@ -539,10 +539,11 @@ header .header-container h3 {
 }
 .footer .section-1 .time-open {
   background: black;
-  padding: 20px;
+  padding: 30px;
 }
 .footer .section-1 .time-open .time-open-container {
   border: 1px dashed rgb(236, 230, 230);
+  padding: 0 0 30px;
 }
 .footer .section-1 .time-open .time-open-container .header h2 {
   margin: 40px 0 0;
@@ -582,4 +583,81 @@ header .header-container h3 {
 }
 .footer .section-1 .time-open .time-open-container h4 {
   margin-bottom: 40px;
+}
+.footer .section-1 .online-booking {
+  background: whitesmoke;
+}
+.footer .section-1 .online-booking h3 {
+  margin-top: 90px;
+  font-family: Allura, sans-serif;
+  font-size: 3.5rem;
+  color: rgb(161, 111, 17);
+  font-weight: 100;
+}
+.footer .section-1 .online-booking h2 {
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  color: rgb(29, 28, 28);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 2.5rem;
+}
+.footer .section-1 .online-booking span img {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  margin-bottom: 50px;
+}
+.footer .section-1 .online-booking form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 20% 60%;
+  max-width: 80%;
+  margin: 0 auto;
+  gap: 25px;
+  grid-template-areas: "ge da ti" "na te em" "su su su";
+}
+.footer .section-1 .online-booking form .form,
+.footer .section-1 .online-booking form select {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  background: transparent;
+  border: transparent;
+  border-bottom: 1px solid rgb(179, 176, 176);
+  outline: none;
+  font-size: 1.2rem;
+}
+.footer .section-1 .online-booking form #gender {
+  grid-area: ge;
+}
+.footer .section-1 .online-booking form #date {
+  grid-area: da;
+}
+.footer .section-1 .online-booking form #time {
+  grid-area: ti;
+}
+.footer .section-1 .online-booking form #name {
+  grid-area: na;
+  color: rgb(179, 176, 176);
+}
+.footer .section-1 .online-booking form #tel {
+  grid-area: te;
+  color: rgb(179, 176, 176);
+}
+.footer .section-1 .online-booking form #email {
+  grid-area: em;
+  color: rgb(179, 176, 176);
+}
+.footer .section-1 .online-booking form #submit {
+  display: inline-block;
+  text-align: center;
+  margin: 40px auto 0;
+  grid-area: su;
+  background: rgb(29, 28, 28);
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
+  padding: 0 50px;
+  border-radius: 50px;
+  letter-spacing: 5px;
 }/*# sourceMappingURL=index.css.map */

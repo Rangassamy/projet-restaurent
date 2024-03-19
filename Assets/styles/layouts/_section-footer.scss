@@ -2,7 +2,7 @@
   //   background: url(../img/gmap.jpg) no-repeat bottom/cover;
   background-color: $color4;
   text-align: center;
-  padding-top: 90px;
+  padding: 90px 0 900px;
 
   .section-1 {
     display: grid;
@@ -13,9 +13,10 @@
 
     .time-open {
       background: $color3;
-      padding: 20px;
+      padding: 30px;
       .time-open-container {
         border: 1px dashed $color1;
+        padding: 0 0 30px;
 
         .header {
           h2 {
@@ -58,6 +59,86 @@
         }
         h4 {
           margin-bottom: 40px;
+        }
+      }
+    }
+    .online-booking {
+      background: $color2;
+
+      h3 {
+        margin-top: 90px;
+        font-family: $font2;
+        font-size: 3.5rem;
+        color: $color5;
+        font-weight: 100;
+      }
+      h2 {
+        text-transform: uppercase;
+        font-family: $font1;
+        color: $color4;
+        transform: translateY(-50%);
+        font-size: 2.5rem;
+      }
+      span img {
+        transform: scale(1.4);
+        margin-bottom: 50px;
+      }
+      form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% 20% 60%;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 25px;
+        grid-template-areas:
+          "ge da ti"
+          "na te em"
+          "su su su";
+
+        .form,
+        select {
+          font-family: $font3;
+          font-weight: 500;
+          background: transparent;
+          border: transparent;
+          border-bottom: 1px solid $color6;
+          outline: none;
+          font-size: 1.2rem;
+        }
+        #gender {
+          grid-area: ge;
+        }
+        #date {
+          grid-area: da;
+        }
+        #time {
+          grid-area: ti;
+        }
+        #name {
+          grid-area: na;
+          color: $color6;
+        }
+        #tel {
+          grid-area: te;
+          color: $color6;
+        }
+        #email {
+          grid-area: em;
+          color: $color6;
+        }
+        #submit {
+          display: inline-block;
+          text-align: center;
+          margin: 40px auto 0;
+          grid-area: su;
+          background: $color4;
+          color: $color2;
+          text-transform: uppercase;
+          font-family: $font1;
+          font-size: 1.2rem;
+          padding: 0 50px;
+          border-radius: 50px;
+          letter-spacing: 5px;
         }
       }
     }
