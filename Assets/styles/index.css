@@ -528,7 +528,7 @@ header .header-container h3 {
 .footer {
   background-color: rgb(29, 28, 28);
   text-align: center;
-  padding: 90px 0 900px;
+  padding: 90px 0 0;
 }
 .footer .section-1 {
   display: grid;
@@ -536,6 +536,11 @@ header .header-container h3 {
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1100px) {
+  .footer .section-1 {
+    grid-template-columns: 1fr;
+  }
 }
 .footer .section-1 .time-open {
   background: black;
@@ -587,12 +592,27 @@ header .header-container h3 {
 .footer .section-1 .online-booking {
   background: whitesmoke;
 }
+@media screen and (max-width: 1100px) {
+  .footer .section-1 .online-booking {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer .section-1 .online-booking {
+    height: 900px;
+  }
+}
 .footer .section-1 .online-booking h3 {
   margin-top: 90px;
   font-family: Allura, sans-serif;
   font-size: 3.5rem;
   color: rgb(161, 111, 17);
   font-weight: 100;
+}
+@media screen and (max-width: 450px) {
+  .footer .section-1 .online-booking h3 {
+    font-size: 3rem;
+  }
 }
 .footer .section-1 .online-booking h2 {
   text-transform: uppercase;
@@ -602,6 +622,11 @@ header .header-container h3 {
           transform: translateY(-50%);
   font-size: 2.5rem;
 }
+@media screen and (max-width: 450px) {
+  .footer .section-1 .online-booking h2 {
+    font-size: 2rem;
+  }
+}
 .footer .section-1 .online-booking span img {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
@@ -609,12 +634,19 @@ header .header-container h3 {
 }
 .footer .section-1 .online-booking form {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 30% 30% 30%;
   grid-template-rows: 20% 20% 60%;
   max-width: 80%;
   margin: 0 auto;
   gap: 25px;
   grid-template-areas: "ge da ti" "na te em" "su su su";
+}
+@media screen and (max-width: 800px) {
+  .footer .section-1 .online-booking form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 100px;
+    grid-template-areas: "ge" "da" "ti" "na" "te" "em" "su";
+  }
 }
 .footer .section-1 .online-booking form .form,
 .footer .section-1 .online-booking form select {
