@@ -535,7 +535,7 @@ header .header-container h3 {
   grid-template-columns: 30% 70%;
   width: 90%;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 @media screen and (max-width: 1100px) {
   .footer .section-1 {
@@ -692,4 +692,95 @@ header .header-container h3 {
   padding: 0 50px;
   border-radius: 50px;
   letter-spacing: 5px;
+}
+.footer .section-2 {
+  padding: 40px 0;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 0;
+}
+.footer .section-2 > h2 {
+  font-family: Allura, sans-serif;
+  font-size: 3.5rem;
+  color: rgb(161, 111, 17);
+  font-weight: 100;
+}
+.footer .section-2 > h3 {
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+  color: rgb(236, 230, 230);
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.footer .section-2 > span img {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  margin-bottom: 60px;
+}
+.footer .section-2 .part-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 200px 200px;
+  grid-template-areas: "pa1 pa3" "pa2 pa3";
+  gap: 20px;
+}
+.footer .section-2 .part-container .part-1,
+.footer .section-2 .part-container .part-2 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.footer .section-2 .part-container .part-1 .left,
+.footer .section-2 .part-container .part-2 .left {
+  background: url(../img/event-01.jpg) no-repeat center/cover;
+  position: relative;
+}
+.footer .section-2 .part-container .part-1 .left .date-container,
+.footer .section-2 .part-container .part-2 .left .date-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  background: rgb(29, 28, 28);
+  color: rgb(236, 230, 230);
+}
+.footer .section-2 .part-container .part-1 .left .date-container h2,
+.footer .section-2 .part-container .part-2 .left .date-container h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.footer .section-2 .part-container .part-1 .left .date-container h3,
+.footer .section-2 .part-container .part-2 .left .date-container h3 {
+  font-family: Roboto, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 100;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+}
+.footer .section-2 .part-container .part-1 {
+  grid-area: pa1;
+}
+.footer .section-2 .part-container .part-2 {
+  grid-area: pa2;
+}
+.footer .section-2 .part-container .part-3 {
+  grid-area: pa3;
 }/*# sourceMappingURL=index.css.map */
