@@ -699,6 +699,11 @@ header .header-container h3 {
   max-width: 1400px;
   margin: 0 auto 0;
 }
+@media screen and (max-width: 1100px) {
+  .footer .section-2 {
+    display: none;
+  }
+}
 .footer .section-2 > h2 {
   font-family: Allura, sans-serif;
   font-size: 3.5rem;
@@ -779,12 +784,22 @@ header .header-container h3 {
   background: rgb(236, 230, 230);
   font-family: Roboto, sans-serif;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 40px 0;
 }
 .footer .section-2 .part-container .part-1 .right h2,
 .footer .section-2 .part-container .part-2 .right h2 {
   font-size: 1.9rem;
   font-weight: 300;
-  margin: 40px 0 30px 35px;
+  margin: 0 0 0 35px;
   letter-spacing: 3px;
 }
 .footer .section-2 .part-container .part-1 .right h3,
@@ -800,7 +815,7 @@ header .header-container h3 {
 .footer .section-2 .part-container .part-2 .right a,
 .footer .section-2 .part-container .part-2 .right a:visited {
   display: inline-block;
-  margin: 35px 0 0 35px;
+  margin: 0 0 0 35px;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 4px;
@@ -829,9 +844,6 @@ header .header-container h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .footer .section-2 .part-container .part-3 .container {
   height: 90%;
@@ -844,9 +856,9 @@ header .header-container h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 160px 0 40px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -856,7 +868,7 @@ header .header-container h3 {
 .footer .section-2 .part-container .part-3 .container > h2 {
   font-size: 1.6rem;
   max-width: 70%;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   font-weight: 100;
   letter-spacing: 3px;
 }
@@ -875,7 +887,6 @@ header .header-container h3 {
   text-transform: uppercase;
   color: black;
   text-decoration: none;
-  margin: 80px 0 50px;
 }
 .footer .section-2 .part-container .part-3 .container .date-container {
   display: -webkit-box;

@@ -174,6 +174,10 @@
     width: 90%;
     max-width: 1400px;
     margin: 0 auto 0;
+
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
     > h2 {
       font-family: $font2;
       font-size: 3.5rem;
@@ -240,11 +244,15 @@
           background: $color1;
           font-family: $font3;
           text-align: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding: 40px 0;
 
           h2 {
             font-size: 1.9rem;
             font-weight: 300;
-            margin: 40px 0 30px 35px;
+            margin: 0 0 0 35px;
             letter-spacing: 3px;
           }
           h3 {
@@ -257,7 +265,7 @@
           a,
           a:visited {
             display: inline-block;
-            margin: 35px 0 0 35px;
+            margin: 0 0 0 35px;
             font-size: 1rem;
             font-weight: 600;
             letter-spacing: 4px;
@@ -284,7 +292,6 @@
         background: url(../img/event-03.jpg) no-repeat center/cover;
         display: flex;
         align-items: center;
-        justify-content: center;
         .container {
           height: 90%;
           width: 90%;
@@ -292,14 +299,15 @@
           position: relative;
           display: flex;
           align-items: center;
-          justify-content: flex-end;
+          justify-content: space-around;
+          padding: 160px 0 40px;
           flex-direction: column;
           font-family: $font3;
 
           > h2 {
             font-size: 1.6rem;
             max-width: 70%;
-            margin: 0 auto 30px;
+            margin: 0 auto;
             font-weight: 100;
             letter-spacing: 3px;
           }
@@ -318,7 +326,6 @@
             text-transform: uppercase;
             color: $color3;
             text-decoration: none;
-            margin: 80px 0 50px;
           }
 
           .date-container {
