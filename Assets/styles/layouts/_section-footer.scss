@@ -172,7 +172,7 @@
   .section-2 {
     padding: 40px 0;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto 0;
     > h2 {
       font-family: $font2;
@@ -197,7 +197,7 @@
     .part-container {
       display: grid;
       grid-template-columns: 60% 40%;
-      grid-template-rows: 200px 200px;
+      grid-template-rows: 230px 230px;
       grid-template-areas:
         "pa1 pa3"
         "pa2 pa3";
@@ -206,9 +206,8 @@
       .part-1,
       .part-2 {
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 35% 65%;
         .left {
-          background: url(../img/event-01.jpg) no-repeat center/cover;
           position: relative;
           .date-container {
             display: flex;
@@ -218,34 +217,137 @@
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
-            height: 80px;
-            width: 80px;
+            height: 120px;
+            width: 120px;
             margin: 0 auto;
             background: $color4;
             color: $color1;
 
             h2 {
               font-family: $font1;
-              font-size: 1.7rem;
+              font-size: 1.9rem;
               font-weight: 500;
             }
             h3 {
               font-family: $font3;
-              font-size: 1.3rem;
+              font-size: 1.5rem;
               font-weight: 100;
               transform: translateY(-30%);
             }
           }
         }
+        .right {
+          background: $color1;
+          font-family: $font3;
+          text-align: left;
+
+          h2 {
+            font-size: 1.9rem;
+            font-weight: 300;
+            margin: 40px 0 30px 35px;
+            letter-spacing: 3px;
+          }
+          h3 {
+            font-size: 1.2rem;
+            color: $color6;
+            margin-left: 30px;
+            letter-spacing: 3px;
+            font-weight: 100;
+          }
+          a,
+          a:visited {
+            display: inline-block;
+            margin: 35px 0 0 35px;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: $color3;
+            text-decoration: none;
+          }
+        }
       }
       .part-1 {
         grid-area: pa1;
+        .left {
+          background: url(../img/event-01.jpg) no-repeat center/cover;
+        }
       }
       .part-2 {
         grid-area: pa2;
+        .left {
+          background: url(../img/event-02.jpg) no-repeat center/cover;
+        }
       }
       .part-3 {
         grid-area: pa3;
+        background: url(../img/event-03.jpg) no-repeat center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container {
+          height: 90%;
+          width: 90%;
+          background: $color1;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          flex-direction: column;
+          font-family: $font3;
+
+          > h2 {
+            font-size: 1.6rem;
+            max-width: 70%;
+            margin: 0 auto 30px;
+            font-weight: 100;
+            letter-spacing: 3px;
+          }
+          > h3 {
+            font-size: 1.2rem;
+            color: $color6;
+            letter-spacing: 3px;
+            font-weight: 100;
+          }
+          > a,
+          a:visited {
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: $color3;
+            text-decoration: none;
+            margin: 80px 0 50px;
+          }
+
+          .date-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 120px;
+            width: 120px;
+            margin: 0 auto;
+            background: $color4;
+            color: $color1;
+
+            h2 {
+              font-family: $font1;
+              font-size: 1.9rem;
+              font-weight: 500;
+            }
+            h3 {
+              font-family: $font3;
+              font-size: 1.5rem;
+              font-weight: 100;
+              transform: translateY(-30%);
+            }
+          }
+        }
       }
     }
   }
