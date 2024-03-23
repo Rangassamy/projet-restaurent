@@ -972,4 +972,116 @@ header .header-container h3 {
   font-family: Roboto, sans-serif;
   font-size: 1.4rem;
   font-weight: 100;
+}
+
+footer {
+  background: url(../img/bg-footer.jpg) no-repeat center/cover;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    background: rgb(29, 28, 28);
+  }
+}
+footer .container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  min-height: 350px;
+}
+@media screen and (max-width: 800px) {
+  footer .container {
+    grid-template-columns: 1fr;
+  }
+}
+footer .container .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  footer .container .left {
+    display: none;
+  }
+}
+footer .container .left h2 {
+  font-family: Allura, sans-serif;
+  font-size: 3rem;
+  font-weight: 100;
+  color: rgb(161, 111, 17);
+  margin-bottom: 20px;
+}
+footer .container .left p {
+  width: 90%;
+  font-family: Roboto, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 40px;
+  color: rgb(179, 176, 176);
+}
+footer .container .right {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 50%;
+}
+footer .container .right .part2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+}
+footer .container .right .part1 {
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .container .right h2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin: 0 10px 0 0;
+  color: rgb(236, 230, 230);
+  text-transform: uppercase;
+}
+footer .container .right input {
+  margin-top: 10px;
+  width: 60%;
+  background: none;
+  border: 1px solid rgb(179, 176, 176);
+  font-size: 1rem;
+  color: rgb(179, 176, 176);
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  padding: 10px;
+}
+footer .container .right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+  color: rgb(179, 176, 176);
 }/*# sourceMappingURL=index.css.map */
