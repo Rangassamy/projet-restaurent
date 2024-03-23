@@ -526,9 +526,11 @@ header .header-container h3 {
 }
 
 .footer {
+  background: url(../img/gmap.jpg) no-repeat bottom;
+  background-size: 100% 20%;
   background-color: rgb(29, 28, 28);
   text-align: center;
-  padding: 90px 0 0;
+  padding: 90px 0 280px;
 }
 .footer .section-1 {
   display: grid;
@@ -540,6 +542,7 @@ header .header-container h3 {
 @media screen and (max-width: 1100px) {
   .footer .section-1 {
     grid-template-columns: 1fr;
+    margin: 0 auto 120px;
   }
 }
 .footer .section-1 .time-open {
@@ -694,10 +697,10 @@ header .header-container h3 {
   letter-spacing: 5px;
 }
 .footer .section-2 {
-  padding: 40px 0;
   width: 90%;
   max-width: 1400px;
-  margin: 0 auto 0;
+  margin: 170px auto 0;
+  padding-bottom: 180px;
 }
 @media screen and (max-width: 1100px) {
   .footer .section-2 {
@@ -844,6 +847,9 @@ header .header-container h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer .section-2 .part-container .part-3 .container {
   height: 90%;
@@ -921,4 +927,49 @@ header .header-container h3 {
   font-weight: 100;
   -webkit-transform: translateY(-30%);
           transform: translateY(-30%);
+}
+.footer .section-3 {
+  background: rgb(236, 230, 230);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 90px 0 40px;
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+.footer .section-3 span img {
+  border-radius: 150px;
+  max-height: 80px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.footer .section-3 p {
+  font-family: Roboto, sans-serif;
+  font-size: 1.4rem;
+  max-width: 85%;
+  margin: 0 auto 40px;
+  line-height: 50px;
+}
+.footer .section-3 h2 {
+  font-family: Roboto, sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+.footer .section-3 h3 {
+  color: rgb(161, 111, 17);
+  font-family: Roboto, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 100;
 }/*# sourceMappingURL=index.css.map */
